@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+	<script src="ai.llt.js"></script>
+	<script type="text/javascript">
+		// 自定义模块 ↓
+		// AI.setModule('myModule','../xxx.js');
+		// 使用自定义模块 ↓
+		// var myModule = AI.require('myModule');
+		var test = AI.require('test');
+		var iString = AI.require('Treat_String');
+
+		var bool = iString.judge_palindrome('Hello Word');
+
+		console.log(bool);
+
+		test.get();
+	</script>
+</body>
+</html>
